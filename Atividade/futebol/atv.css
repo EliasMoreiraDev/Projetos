@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: midnightblue;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+
+  background-color: rgb(0, 0, 59);
+
+  box-shadow: 0px 5px 20px rgb(9, 9, 51);
+
+  display: flex;
+
+  padding: 10px;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.menu li a {
+
+  color: white;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+}
+
+.menu li a:hover {
+  color: white;
+
+  display: block;
+  text-decoration: none;
+  background-color: rgb(29, 29, 129);
+
+  margin-left: 10px;
+
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+p,
+h2 {
+  color: white;
+
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carrinho img {
+  width: 60px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.item img {
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.sidenav {
+
+  max-width: 300px;
+  min-width: 250px;
+
+  height: 900px;
+
+  background-color: rgb(172, 164, 0);
+
+  border-radius: 20px;
+
+  grid-area: "sidenav";
+  grid-row: sidenav;
+}
+
+.sidenav img {
+  width: 100%;
+
+  border-radius: 10px;
+  height: 220px;
+
+  margin: 20px 10px 0px 0px;
+}
+
+.sidenav .vaxco {
+  width: 100%;
+
+  border-radius: 10px;
+  height: 270px;
+
+  margin: 20px 10px 0px 0px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Staatliches', cursive;
+  text-align: right;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+.btn1 {
+  margin-top: 5px;
+  background-color: red;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(157, 11, 11);
+}
+
+.btn2 {
+
+  background-color: rgb(38, 0, 255);
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(10, 0, 150);
+}
+
+.item {
+  margin-top: 50px;
+  margin: 0px 20px 0px 20px;
+  max-width: 300px;
+  min-width: 250px;
+  height: 295px;
+  background-color: rgb(0, 0, 92);
+  border-radius: 20px;
+  grid-area: "item";
+}
+
+.container {
+
+  justify-content: center;
+  display: grid;
+
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+  grid-template-areas:
+    "sidenav item item"
+    "sidenav item item"
+  ;
+}
+
+h4 {
+  text-align: justify;
+  margin: 10px;
+}
+
+
+
+.item a {
+  text-align: justify;
+  margin-top: 10px;
+  text-decoration: none;
+  color: gray;
+
+}
+
+.item a:hover {
+
+  text-decoration: none;
+  color: white;
+
+}
+
+@media(max-width:820px) {
+
+  .container {
+    margin-top: 20px;
+    grid-template-areas:
+      "sidenav item"
+      "sidenav item"
+      "sidenav item"
+      "sidenav item"
+      "sidenav item";
+  }
+}
+
+@media(max-width:520px) {
+  .container {
+    grid-template-areas:
+      "sidenav"
+      "item"
+      "item"
+      "item"
+      "item";
+  }
+}
