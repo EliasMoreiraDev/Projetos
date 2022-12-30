@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tourney:wght@500;600&display=swap');
 
 body{
-    background-color: midnightblue;
+    background-color: rgb(12, 14, 98);
     margin: 0px;
 }
 header{
@@ -19,7 +19,7 @@ nav{
     background-color: rgb(0, 0, 59);
     padding: 10px;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.182);
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 nav>a{
     text-decoration: none;
@@ -34,55 +34,59 @@ nav>a:hover{
     background-color: rgb(29, 29, 129);
     
 }
-
 main{
-    
-    width: 960px;
-    margin: auto;
+    max-width: 1050px;
+    background-color: white;
+    margin: 0 auto;
+
+
     
 }
-
 main h1{
-    
-    
     font-family: 'Tourney', cursive;
-    color: black;
-    font-size: 35px;
+    color: rgb(0, 0, 0);
+    text-align: center;
     font-weight: bold;
-    background-color: white;  
-    width: 320px; 
-    margin-bottom: 30px; 
-
+    margin-top: 0px;
 }
 
 section{
-    
     display: inline-block;
-    background-color: rgb(255, 255, 255);
-    height: 320px;
-    width: 300px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.182);
 
+    background-color: antiquewhite(255, 255, 255);
+
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.260);
+
+    max-width: 300px;
+
+    margin: 20px;
+
+    border-radius: 14px;
+
+    border: 2px solid black;
 }
 .imgbox{
-    width: 100%;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 10px;
+    max-width: 300px;
 }
 .titulobox{
     font-weight: bold;
-    
+    font-size: 18px;
     text-align: center;
+    
 }
-
 .textobox{
-    text-indent:10px;
     text-align: justify;
-    margin-right: 7px;
-    margin-left: 7px;
-    margin-bottom: 7px;
+    text-indent: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
-
+footer{
+    background-color: rgb(2, 10, 40);
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;    
+    text-align: center;
+    color: white;
+}
