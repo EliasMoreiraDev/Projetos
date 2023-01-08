@@ -16,6 +16,11 @@ Grandes telas: acima de 1200px
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
     }
+    form > a.botao{
+        display: block;
+        width: 170px;
+        margin-left: 37px;
+    }
 
 }
 @media screen and (min-width: 768px) and (max-width:992px)/*Tablets*/{
@@ -47,6 +52,9 @@ Grandes telas: acima de 1200px
         float: right;
         width: 70%;
     }
+    form > a.botao{
+        float: right;
+    }
 
 }
 
@@ -74,5 +82,16 @@ Grandes telas: acima de 1200px
     section#login > div#formulario{
         float: left;
         width: 50%;
+    }
+    div#formulario > h1{
+        font-size: 2em;
+    }
+    div#formulario > p{
+       
+        font-size: 1.2em;
+    
+    }
+    form > a.botao{
+        float: right;
     }
 }
